@@ -30,7 +30,9 @@ foreach ($region as $key => $value) {
   $cities = "";
   
   foreach ($value as $innerValue) {
+    if(mb_stripos($innerValue, "К")===0){
      $cities .= "$innerValue, ";
+    }
   }
   
   $cities = substr($cities, 0, strripos($cities, ","));
