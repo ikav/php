@@ -45,3 +45,8 @@ foreach ($region as $key => $value) {
   $cities = substr($cities, 0, strripos($cities, ","));
   echo "$cities<br>";
 }
+
+//Вариант2. Более эффективно без вложенного цикла
+foreach ($region as $key => $value) {
+  echo "<br><b>$key</b><br>". implode(", ", $value);
+}

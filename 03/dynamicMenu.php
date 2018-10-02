@@ -50,6 +50,7 @@
     echo "<li><a href='#'>$key</a></li>";
     
     echo '<ul>';
+    //is_array() - определяет является ли переменная массивом
     foreach ($value as $innerValue) {
       echo "<li><a href='#'>$innerValue</a></li>";
     }
