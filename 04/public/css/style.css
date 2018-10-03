@@ -9,6 +9,12 @@ a {
   text-decoration: none;
 }
 
+h1 {
+  margin-left: 40px;
+  margin-bottom: 20px;
+  color: #2731be;
+}
+
 /* Фото галерея */
 .catalog-products-list {
   text-transform: none;
