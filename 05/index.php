@@ -23,9 +23,8 @@
       
     <li class="product-item">
       <p>
-        <!--<a href="<?=$data['url']?>" target="<?=$data['name']?>">-->
         <a href="card-of-bird.php?id=<?=$data['id']?>" target="_blank">  
-          <img src="<?=$data['url']?>" width="184" alt="<?=$data['description']?>">
+          <img src="<?=$data['url_small']?>" alt="<?=$data['description']?>">
         </a>
       </p>
       <div><?=$data['name']?></div>
