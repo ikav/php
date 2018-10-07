@@ -16,9 +16,9 @@
     <link href="public/css/style.css" rel="stylesheet" >
   </head>
   <body>
-    <h2><?=$data['name']?></h2>
+    <h1><?=$data['name']?></h1>
     <img src="<?=$data['url']?>" alt="<?=$data['description']?>">
-    <p>Эту птичку уже посмотрели: <b><?=$data['numViews']?></b> раз</p>
+    <p>Количество просмотров: <b><?=$data['numViews']?></p>
   </body>
 </html>
 
