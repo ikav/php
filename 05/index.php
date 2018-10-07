@@ -15,7 +15,7 @@
     <ul class="products-list catalog-products-list">
       
     <?php
-      $sql = "select * from birds";
+      $sql = "select * from birds order by numViews desc";
       $res = mysqli_query($connect, $sql);
       if (mysqli_num_rows($res) > 0) : 
         while ($data = mysqli_fetch_assoc($res)) :
