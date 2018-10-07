@@ -17,8 +17,10 @@
   </head>
   <body>
     <h1><?=$data['name']?></h1>
-    <img src="<?=$data['url']?>" alt="<?=$data['description']?>">
-    <p>Количество просмотров: <b><?=$data['numViews']?></p>
+    <div class="card-of-bird">
+      <img src="<?=$data['url']?>" alt="<?=$data['description']?>">
+      <p>Количество просмотров: <b><?=$data['numViews']?></p>
+    </div>
   </body>
 </html>
 
