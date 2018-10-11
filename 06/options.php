@@ -2,29 +2,19 @@
 
 switch ($_GET['operation']){
   case "+" :
-    echo "<option selected value='+'>+</option>
-    <option value='-'>-</option>
-    <option value='*'>*</option>
-    <option value='/'>/</option>";
+    $selected_plus = 'selected';
     break;
   case "-" :
-    echo "<option value='+'>+</option>
-    <option selected value='-'>-</option>
-    <option value='*'>*</option>
-    <option value='/'>/</option>";
+    $selected_minus = 'selected';
     break;
   case "*" :
-    echo "<option value='+'>+</option>
-    <option value='-'>-</option>
-    <option selected value='*'>*</option>
-    <option value='/'>/</option>";
+    $selected_muliple = 'selected';
     break;
   case "/" :
-    echo "<option value='+'>+</option>
-    <option value='-'>-</option>
-    <option value='*'>*</option>
-    <option selected value='/'>/</option>";
+    $selected_divided = 'selected';
     break;
+  default :
+    $selected_plus = 'selected';
 }
     
 
