@@ -10,22 +10,14 @@
   <h1>Комментарии к нашей работе</h1>
   
   <?php
-    include_once "/config/config.php";
-
-    $sql = "select * from comments";
-    $res = mysqli_query($connect, $sql);
-    
-    while($data = mysqli_fetch_assoc($res)){
-      echo "<p><i>Автор: " . $data['author'] . ", " . $data['dateComment'] ."</i></p>";
-      echo "<p>" . $data['comment'] . "</p><hr>";
-    }
-
+    include_once "/engine/outputComments.php";
+    include_once "/engine/insertComment.php";
   ?>
   
-  <form>
+  <form method="POST" action="comments.php">
     <h2>Оставьте свой комментарий</h2>
-    <p><input placeholder="Скажите как Вас зовут" type="text" name="author" style="width: 250px"></p>
-    <textarea placeholder="Введите свой комментарий" name="comment" rows="10" cols="50"></textarea>
+    <p><input placeholder="Скажите как Вас зовут" type="text" name="author" style="width: 250px" required=""></p>
+    <textarea placeholder="Введите свой комментарий" name="comment" rows="10" cols="50" required=""></textarea>
     <p><input type="submit" name="saveComment" value="Сохранить"></p>
   </form>
 </body>
