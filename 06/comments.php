@@ -21,7 +21,6 @@
     include_once "/engine/insertComment.php";
   ?>
 
-  <?=$message?>
   <form method="POST" action="comments.php">
     <h2>Оставьте свой комментарий</h2>
     <p><input placeholder="Скажите как Вас зовут" type="text" name="author" style="width: 250px" required=""></p>
