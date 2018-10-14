@@ -2,9 +2,7 @@
 //=======================================
 //Выводит весь каталог из базы данных
 //=======================================
-  include_once "/config/config.php";
-
-  $tpl = file_get_contents("templates/iconsOfGoods.tpl");
+  include_once "config/config.php";
   
   $sql = "select * from catalog";
   $res = mysqli_query($connect, $sql);

@@ -59,6 +59,29 @@ h1 {
           box-shadow: 0 10px 50px #eaeaea;
 }
 
-.card-of-bird {
-  margin-left: 40px;
+.card-of-good {
+  margin: 40px;
+}
+
+.img-with-descr {
+  display: flex;
+}
+
+.image-of-good {
+  margin-right: 20px;
+}
+
+.title {
+  margin-left: 0;
+  margin-bottom: 20px;
+}
+
+.order {
+  margin-top: 20px;
+  font-size: 40px;
+  color: white;
+  background-color: green;
+  min-width: 350px;
+  min-height: 100px;
+  cursor: pointer;
 }

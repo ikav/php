@@ -1,4 +1,4 @@
-{* Вывод миниатюр товаров *}
+<!-- Вывод миниатюр с фото товара -->
 <ul class="products-list catalog-products-list">
   <li class="product-item">
     <div>{title}</div>
@@ -10,5 +10,3 @@
     <div>{price}</div>
   </li>  
 </ul>
-
-
